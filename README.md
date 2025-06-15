@@ -1,4 +1,7 @@
-# -Grid-Layout-Code-Generator-Canvas-Based-Visual-HTML-CSS-Builder
+# Grid-Layout-Code-Generator-Canvas-Based-Visual-HTML-CSS-Builder
+
+![Screenshot 2025-06-15 163023](https://github.com/user-attachments/assets/3e6d0f63-9db9-4f05-95ea-b890992194c6)
+
 **📄 Description :**A powerful canvas-based tool to **visually generate grid layouts** with real-time HTML and CSS output.
 
 ### ✨ Features:
@@ -31,4 +34,5 @@
 *   HTML/CSS learners
     
 
-🔗 **Live Demo:** (Add your demo link)📂 **License:** MIT👨‍💻 Contributions & feedback are welcome!
+🔗 **Live Demo:** [(Add your demo link)](https://jahanzaibali786.github.io/-Grid-Layout-Code-Generator-Canvas-Based-Visual-HTML-CSS-Builder/) 
+📂 **License:** MIT👨‍💻 Contributions & feedback are welcome!
