@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Grid Layout Generator</h1>
+            <p>Drag to create boxes, get instant HTML & CSS code</p>
+        </div>
+        <div class="main-content">
+            <div class="canvas-area">
+                <button class="canvas-maximize-btn" onclick="toggleCanvasFullscreen()">⛶ Maximize</button>
+                <div class="canvas" id="canvas"></div>
+            </div>
+            <div class="code-panel">
+                <div class="code-tabs">
+                    <div class="window-controls">
+                        <button class="window-btn close-btn" title="Close"></button>
+                        <button class="window-btn minimize-btn" title="Minimize"></button>
+                        <button class="window-btn maximize-btn" title="Maximize"></button>
+                    </div>
+                    <button class="code-tab active" data-tab="html">HTML</button>
+                    <button class="code-tab" data-tab="css">CSS</button>
+                </div>
+                <div class="code-content">
+                    <div class="code-block" id="html-code">
+                        <span class="tag">&lt;div</span>
+                        <span class="attribute">class</span>=
+                        <span class="value">"grid-container"</span>
+                        <span class="tag">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="tag">
+                            &lt;!-- Draw boxes to
+                            generate layout --&gt;
+                        </span>
+                        <br>
+                        <span class="tag">&lt;/div&gt;</span>
+                    </div>
+                    <div class="code-block hidden" id="css-code">
+                        <span class="selector">.grid-container</span> {
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="property">position</span>
+                        :
+                        <span class="value">relative</span>;
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="property">width</span>
+                        :
+                        <span class="value">100%</span>;
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="property">height</span>
+                        :
+                        <span class="value">500px</span>;
+                        <br>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="stats">
+                <span id="box-count">0 boxes</span>
+                •
+                <span id="coverage">0% coverage</span>
+            </div>
+            <div class>
+                Created by Jahanzaib ❤️
+            </div>
+            <div>
+                <button class="btn btn-secondary" onclick="clearAll()">
+                    Clear
+                    All
+                </button>
+                <button class="btn btn-primary" onclick="copyCode()">
+                    Copy
+                    Code
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
